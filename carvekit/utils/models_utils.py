@@ -9,7 +9,6 @@ import warnings
 from typing import Union, Tuple, Any
 
 import torch
-from torch import autocast
 
 
 class EmptyAutocast(object):
@@ -71,9 +70,7 @@ def get_precision_autocast(
         return EmptyAutocast(), dtype
 
     return (
-        torch.autocast(
-            device_type=device, dtype=dtype, enabled=True, cache_enabled=cache_enabled
-        ),
+        EmptyAutocast(),
         dtype,
     )
 
