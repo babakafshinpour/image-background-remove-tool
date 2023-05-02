@@ -46,7 +46,7 @@ setup(
         "machine learning",
         "remove bg",
     ],
-    url="https://github.com/OPHoperHPO/image-background-remove-tool",
+    url="https://github.com/babakafshinpour/image-background-remove-tool",
     packages=find_packages(),
     scripts=[],
     install_requires=req_file("requirements.txt"),
