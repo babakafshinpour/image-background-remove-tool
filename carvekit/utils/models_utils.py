@@ -30,7 +30,7 @@ def get_precision_autocast(
     device="cpu", fp16=True, override_dtype=None
 ) -> Union[
     Tuple[EmptyAutocast, Union[torch.dtype, Any]],
-    Tuple[autocast, Union[torch.dtype, Any]],
+    Tuple[EmptyAutocast, Union[torch.dtype, Any]],
 ]:
     """
     Returns precision and autocast settings for given device and fp16 settings.
